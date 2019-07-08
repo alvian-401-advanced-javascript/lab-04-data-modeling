@@ -44,4 +44,30 @@ describe('Categories Model', () => {
       });
   });
 
+  it('can delete() a category', () => {
+ 
+    let obj = { name: 'Test Category' };
+    return categories.create(obj)
+    .then(record => {
+      let deletedObj = categories.delete(record);
+      console.log(deletedObj);
+      expect(deletedObj).toEqual(deletedObj);
+
+    })
+  
+  });
+
+  it('can update() a category', () => {
+    let obj = { name: 'Test Category' };
+    return categories.create(obj)
+      .then(record => {
+    let updated = {...record, name: 'Update Test'};
+    let updatedId = updated.id;
+    categories.update(updated.id, updated);
+
+    expect(updatedId).toEqual(record.id);
+    expect(updated.name).toEqual('Update Test');
+      });
+  });
+
 });

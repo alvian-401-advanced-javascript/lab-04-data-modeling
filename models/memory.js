@@ -2,6 +2,8 @@
 
 const uuid = require('uuid/v4');
 
+// const schema = require('./categories/categories.js');
+
 class Model {
 
   constructor() {

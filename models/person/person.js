@@ -1,15 +1,16 @@
 'use strict';
 
-const DataModel = require('../memory.js');
+const DataModel = require('../file.js');
 
-class Categories extends DataModel {
+class Person extends DataModel {
   constructor() {
     super();
     this.schema = {
       id: { required: true },
       name: { type:String, required: true },
+      gender: { type:String, required: true }
     };
   }
 }
 
-module.exports = Categories;
+module.exports = Person;
