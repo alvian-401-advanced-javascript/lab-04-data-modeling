@@ -5,7 +5,7 @@
 ### Author: Alvian Joseph
 
 ### Links and Resources
-* [submission PR](https://github.com/alvian-401-advanced-javascript/lab-03-async)
+* [submission PR](https://github.com/alvian-401-advanced-javascript/lab-04-data-modeling/pull/1)
 * [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-04-data-modeling.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-04-data-modeling)
 
 
