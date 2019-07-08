@@ -47,10 +47,14 @@ describe('Categories Model', () => {
   it('can delete() a category', () => {
  
     let obj = { name: 'Test Category' };
-    let createdObj = categories.create(obj);
-    let deletedObj = categories.delete(createdObj);
-    console.log(deletedObj);
-    expect(deletedObj).toEqual(deletedObj);
+    return categories.create(obj)
+    .then(record => {
+      let deletedObj = categories.delete(record);
+      console.log(deletedObj);
+      expect(deletedObj).toEqual(deletedObj);
+
+    })
+  
   });
 
   it('can update() a category', () => {
